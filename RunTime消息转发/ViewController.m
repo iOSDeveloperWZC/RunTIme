@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "BookClass.h"
 @interface ViewController ()
 
 @end
@@ -16,9 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    //模拟后台返回的数据
+    NSDictionary *dataSourceDic = @{@"name":[NSNull null],@"book":@"杭州市西湖区"};
+    
+    //bookID 和 book字段需要映射
+    NSDictionary *mapDic = @{@"book":@"bookID"};
+    
+    BookClass *book = [[BookClass alloc]initWithDic:dataSourceDic mapDic:mapDic];
+  
 }
-
+    
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

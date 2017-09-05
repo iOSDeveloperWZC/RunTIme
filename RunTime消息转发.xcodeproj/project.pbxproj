@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26AA999D1F5ED2F6001B815B /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AA999C1F5ED2F6001B815B /* BaseModel.m */; };
+		26AA99A01F5ED3F4001B815B /* NSObject+runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AA999F1F5ED3F4001B815B /* NSObject+runtime.m */; };
 		26C825CD1F5D24D7000B9ED9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C825CC1F5D24D7000B9ED9 /* main.m */; };
 		26C825D01F5D24D7000B9ED9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C825CF1F5D24D7000B9ED9 /* AppDelegate.m */; };
 		26C825D31F5D24D7000B9ED9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C825D21F5D24D7000B9ED9 /* ViewController.m */; };
 		26C825D61F5D24D7000B9ED9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26C825D41F5D24D7000B9ED9 /* Main.storyboard */; };
 		26C825D81F5D24D7000B9ED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26C825D71F5D24D7000B9ED9 /* Assets.xcassets */; };
 		26C825DB1F5D24D7000B9ED9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26C825D91F5D24D7000B9ED9 /* LaunchScreen.storyboard */; };
+		26C825E41F5D29A8000B9ED9 /* BookClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C825E31F5D29A8000B9ED9 /* BookClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26AA999B1F5ED2F6001B815B /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		26AA999C1F5ED2F6001B815B /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		26AA999E1F5ED3F4001B815B /* NSObject+runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+runtime.h"; sourceTree = "<group>"; };
+		26AA999F1F5ED3F4001B815B /* NSObject+runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+runtime.m"; sourceTree = "<group>"; };
 		26C825C81F5D24D7000B9ED9 /* RunTime消息转发.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RunTime消息转发.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C825CC1F5D24D7000B9ED9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		26C825CE1F5D24D7000B9ED9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +33,8 @@
 		26C825D71F5D24D7000B9ED9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26C825DA1F5D24D7000B9ED9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26C825DC1F5D24D7000B9ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26C825E21F5D29A8000B9ED9 /* BookClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookClass.h; sourceTree = "<group>"; };
+		26C825E31F5D29A8000B9ED9 /* BookClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +48,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26AA99971F5ED129001B815B /* RunTime */ = {
+			isa = PBXGroup;
+			children = (
+				26AA999E1F5ED3F4001B815B /* NSObject+runtime.h */,
+				26AA999F1F5ED3F4001B815B /* NSObject+runtime.m */,
+				26AA999B1F5ED2F6001B815B /* BaseModel.h */,
+				26AA999C1F5ED2F6001B815B /* BaseModel.m */,
+			);
+			name = RunTime;
+			sourceTree = "<group>";
+		};
 		26C825BF1F5D24D7000B9ED9 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +78,13 @@
 		26C825CA1F5D24D7000B9ED9 /* RunTime消息转发 */ = {
 			isa = PBXGroup;
 			children = (
+				26AA99971F5ED129001B815B /* RunTime */,
 				26C825CE1F5D24D7000B9ED9 /* AppDelegate.h */,
 				26C825CF1F5D24D7000B9ED9 /* AppDelegate.m */,
 				26C825D11F5D24D7000B9ED9 /* ViewController.h */,
 				26C825D21F5D24D7000B9ED9 /* ViewController.m */,
+				26C825E21F5D29A8000B9ED9 /* BookClass.h */,
+				26C825E31F5D29A8000B9ED9 /* BookClass.m */,
 				26C825D41F5D24D7000B9ED9 /* Main.storyboard */,
 				26C825D71F5D24D7000B9ED9 /* Assets.xcassets */,
 				26C825D91F5D24D7000B9ED9 /* LaunchScreen.storyboard */,
@@ -110,6 +133,7 @@
 				TargetAttributes = {
 					26C825C71F5D24D7000B9ED9 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = WZVNT4AWYH;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -152,7 +176,10 @@
 			files = (
 				26C825D31F5D24D7000B9ED9 /* ViewController.m in Sources */,
 				26C825D01F5D24D7000B9ED9 /* AppDelegate.m in Sources */,
+				26AA99A01F5ED3F4001B815B /* NSObject+runtime.m in Sources */,
+				26AA999D1F5ED2F6001B815B /* BaseModel.m in Sources */,
 				26C825CD1F5D24D7000B9ED9 /* main.m in Sources */,
+				26C825E41F5D29A8000B9ED9 /* BookClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +299,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WZVNT4AWYH;
 				INFOPLIST_FILE = "RunTime消息转发/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "------.RunTime----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vendor.vendor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -283,9 +311,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WZVNT4AWYH;
 				INFOPLIST_FILE = "RunTime消息转发/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "------.RunTime----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vendor.vendor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -309,6 +338,7 @@
 				26C825E11F5D24D7000B9ED9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
