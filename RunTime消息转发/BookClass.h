@@ -12,5 +12,5 @@
 
 @property(nonatomic,copy)NSString *name;
 @property(nonatomic,strong)NSNumber *bookID;
-
+-(void)medhtod;
 @end

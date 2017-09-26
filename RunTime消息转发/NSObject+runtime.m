@@ -13,6 +13,7 @@
 -(void)initWithDic:(NSDictionary *)dic andMapDic:(NSDictionary *)mapDic
 {
     [self fetchValueFormNetDict:dic andMapDic:mapDic];
+
 }
 //
 - (void)fetchValueFormNetDict:(NSDictionary *)dic andMapDic:(NSDictionary *)MapDic{

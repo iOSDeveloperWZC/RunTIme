@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [UIDevice currentDevice] 
     //模拟后台返回的数据
     NSDictionary *dataSourceDic = @{@"name":[NSNull null],@"book":@"杭州市西湖区"};
     
@@ -25,6 +26,7 @@
     
     BookClass *book = [[BookClass alloc]initWithDic:dataSourceDic mapDic:mapDic];
   
+    [book medhtod];
 }
     
 
